@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+  font-weight: 200;
+}
+body {
+  background-color: #ffc600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input {
+  width: 100%;
+  padding: 20px;
+}
+.search-form {
+  width: 400px;
+  margin: 50px auto;
+}
+input.search {
+  position: relative;
+  width: 120%;
+  text-align: center;
+  left: -10%;
+  top: 10px;
+  font-size: 40px;
+  border: 10px solid #f7f7f7;
+  outline: none;
+  z-index: 2;
+  box-shadow: 0 0 5px #0000001f, inset 0 0 2px #00000030;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.suggestions {
+  position: relative;
+  list-style: none;
+}
+.suggestions li {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  box-shadow: 0 0 10px #00000024;
+  text-transform: capitalize;
+  transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -ms-transition: background 0.2s;
+  -o-transition: background 0.2s;
+}
+.suggestions li:nth-child(even) {
+  background: linear-gradient(to bottom, #fff 0%, #efefef 100%,);
+  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  -webkit-transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  -moz-transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  -ms-transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  -o-transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+}
+.suggestions li:nth-child(odd) {
+  background: linear-gradient(to top, #fff 0%, #efefef 100%);
+  transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  -webkit-transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  -moz-transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  -ms-transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  -o-transform: perspective(100px) rotateX(-3deg) translateY(3px);
+}
+span.population {
+  font-size: 15px;
+}
+.h1 {
+  background: #ffc600;
+}
