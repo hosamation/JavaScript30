@@ -95,7 +95,7 @@ body {
   width: 50%;
   background-color: #ffc600;
   flex: 0;
-  flex-basis: 50%;
+  flex-basis: 0%;
 }
 input[type=range] {
   width: 100%;
